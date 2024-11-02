@@ -24,6 +24,17 @@
   </ion-row>
 </ion-grid>
 
+
+<ion-datetime-button datetime="datetime"></ion-datetime-button>
+
+<ion-modal [keepContentsMounted]="true">
+  <ng-template>
+    <ion-datetime id="datetime"></ion-datetime>
+  </ng-template>
+</ion-modal>
+
+
+
 <div *ngIf="data.length == 0" class="message">
   <ion-label>Задачи отсутствуют</ion-label>
 </div>
